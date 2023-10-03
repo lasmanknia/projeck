@@ -1,0 +1,128 @@
+body{
+    background-image: url("img/1.jpg");
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-family: 'Anek Bangla', sans-serif;
+    font-size: 6vh;
+    position: absolute;
+    margin-top: 13vh;
+    margin-left: 3.5vw;
+}
+.nam{
+    width: 40vw;
+    margin-top: 20vh;
+    position: absolute;
+    margin-left: 5px;
+}
+.title{
+    font-family: 'Anek Bangla', sans-serif;
+    text-align: center;
+    color: rgb(232, 121, 121);
+    font-size: 20px;
+    font-weight: 20px;
+}
+
+
+ul {  
+    list-style-type: none;  
+    display: flex;
+    justify-content: center;
+    margin: 0;  
+    padding: 0px;  
+    overflow: hidden;  
+    background-color: rgba(250, 232, 232, 0.532); 
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+     
+  }  
+    
+  li a {  
+    display: block;  
+    color: rgb(11, 11, 11);  
+   font-size:20px;  
+    text-align: center;  
+    padding: 10px 20px;  
+    text-decoration: none;  
+  }  
+  .active{  
+  background-color: gray;  
+  color: white;  
+  }  
+  li a:hover {  
+    background-color: orange;  
+    color: white;  
+  }  
+
+/*button*/
+
+.btnmain{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40vh;
+
+}
+
+  @import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+.button {
+  text-align: center;
+  width: 30vw;
+  padding: 16px 42px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+  line-height: 1.25;
+  background: #6d41a0d9;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  position: relative;
+  transition: background-color .6s ease;
+  overflow: hidden;
+  margin: 15px;
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    top: var(--mouse-y);
+    left: var(--mouse-x);
+    transform-style: flat;
+    transform: translate3d(-50%,-50%,0);
+    background: rgba(white,.1);
+    border-radius: 100%;
+    transition: width .3s ease, height .3s ease;
+  }
+  &:focus,
+  &:hover {
+      background: darken(#FC6E51,7%);
+  }
+  &:active {
+    &:after {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+
+#em{
+  padding: 20px;
+  text-align: center;
+  margin-top: 18vh;
+}
+#em a{
+  text-decoration: none;
+  padding: 20px;
+  background-color: #ff05058f;
+  font-size: 2vh;
+  border-radius: 20px;
+  color: black;
+  transition: all .8s;
+
+}
